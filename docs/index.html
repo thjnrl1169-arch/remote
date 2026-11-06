@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#d4d8d5">
+  <meta name="description" content="remote 개인용 카카오톡 봇 콘솔">
+  <meta name="referrer" content="no-referrer">
+  <title>remote · 접속</title>
+  <link rel="icon" href="mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="console.css">
+  <script src="launch.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="masthead">
+      <a class="brand" href="./"><img src="mark.svg" width="34" height="34" alt=""><strong>remote<span>.</span></strong></a>
+      <span class="mono mast-center">CONTROL SURFACE / 01</span>
+      <span class="mono mast-right">PRIVATE WORKSPACE</span>
+    </header>
+    <main>
+      <ol class="layers mono" aria-label="접속 단계">
+        <li aria-current="step">01 <span>사이트 로그인</span></li>
+        <li>02 <span>카카오 기기 인증</span></li>
+        <li>03 <span>운영 콘솔</span></li>
+      </ol>
+      <div class="bench">
+        <div class="bar mono"><span><i></i> REMOTE / ACCESS</span><span>FIG. 01</span></div>
+        <div class="gate-body">
+          <section class="model" aria-label="와이어프레임 큐브">
+            <span class="mono model-tag">OBJECT / 001</span>
+            <img src="wireframe.svg" width="540" height="380" alt="">
+            <span class="mono model-foot">X · Y · Z <b>◈</b> CONTROL MODEL</span>
+          </section>
+          <section class="gate-panel">
+            <p class="micro mono">LAYER 01 / WORKSPACE</p>
+            <h1>remote<span>.</span></h1>
+            <p>카카오톡 봇 운영 콘솔에 접속합니다. 보안 연결에서 사이트 로그인과 카카오 기기 인증을 진행하세요.</p>
+            <div class="actions">
+              <a class="primary" id="open" hidden>사이트 로그인 <span aria-hidden="true">↗</span></a>
+              <p class="feedback" id="status" role="status">운영 콘솔 주소를 확인하는 중입니다.</p>
+            </div>
+          </section>
+        </div>
+      </div>
+      <p class="feedback" aria-hidden="true"></p>
+    </main>
+    <footer class="mono"><span>REMOTE / KAKAO CONTROL</span><span>BUILD 1.14.66</span></footer>
+  </div>
+</body>
+</html>
